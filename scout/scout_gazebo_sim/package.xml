@@ -1,31 +1,25 @@
 <?xml version="1.0"?>
-<package>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>scout_gazebo_sim</name>
-  <version>0.0.1</version>
-  <description>AgileX Scout 2.0 Simulator bringup</description>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="1561155732@qq.com">q</maintainer>
+  <license>TODO: License declaration</license>
 
-  <author email="ruixiang.du@westonrobot.com">Ruixiang Du</author>
-  <maintainer email="ruixiang.du@westonrobot.com">Ruixiang Du</maintainer>
-
-  <license>BSD</license>
-
-  <url type="website">http://ros.org/wiki/scout_gazebo</url>
-  <url type="bugtracker">https://github.com/husky/husky_simulator/issues</url>
-  <url type="repository">https://github.com/westonrobot/scout_ros</url>
-
-  <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>roslaunch</build_depend>
-  <build_depend>roscpp</build_depend>
-  <build_depend>sensor_msgs</build_depend>
-  <run_depend>roscpp</run_depend>
-  <run_depend>sensor_msgs</run_depend>
-  <run_depend>controller_manager</run_depend>
-  <run_depend>gazebo_plugins</run_depend>
-  <run_depend>gazebo_ros</run_depend>
-  <run_depend>gazebo_ros_control</run_depend>
-  <run_depend>scout_description</run_depend>
-  <run_depend>rostopic</run_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  
+  <!-- <exec_depend>rviz</exec_depend> -->
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
 
   <export>
+    <build_type>ament_cmake</build_type>
   </export>
 </package>
